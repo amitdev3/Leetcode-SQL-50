@@ -1,0 +1,13 @@
+WITH CTE AS (
+SELECT D.name as Department ,E.name as Employee ,E.Salary as Salary  FROM Employee E
+INNER JOIN Department D
+ON E.departmentId  = D.ID
+)
+,CTE2 AS (SELECT *
+,DENSE_RANK() OVER(PARTITION BY Department ORDER BY Salary DESC) AS RNK
+ FROM CTE)
+ SELECT Department,Employee,Salary 
+ FROM CTE2
+ WHERE RNK <=3;
+
+-- Leave a like
