@@ -1,0 +1,8 @@
+/* Write your T-SQL query statement below */
+SELECT name FROM (
+SELECT *
+,CASE WHEN referee_id IS NULL THEN 0
+ELSE referee_id
+END AS ref_Id
+FROM CUSTOMER) A
+WHERE ref_id <> 2;
