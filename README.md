@@ -1,4 +1,7 @@
 # Leetcode SQL 50 Questions
+
+[Click here to check out all the questions](https://leetcode.com/studyplan/top-sql-50/)</br>
+
 This repository contains solutions to **50 SQL** questions commonly asked in coding interviews, as part of a series of videos uploaded to YouTube. These questions cover a wide range of SQL topics, including **SELECT statements, JOINs, subqueries, window functions, and optimization techniques.**
 
 In each video, I walk through the solutions in detail, explaining the approach and thought process behind solving each problem. The solutions provided here are written in SQL and are designed to help you understand key concepts and improve your SQL skills.
